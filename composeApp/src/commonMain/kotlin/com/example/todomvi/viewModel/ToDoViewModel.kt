@@ -39,7 +39,7 @@ class ToDoViewModel(val repository: ToDoARepositoryImpl = ToDoARepositoryImpl(Ne
             _state.value.copy(isLoading = true)
         }
         viewModelScope.launch(Dispatchers.IO) {
-            delay(2000) // simulate network call
+//            delay(2000) // simulate network call
 //            _state.value = state.value.copy(
 //                isLoading = false,
 //                error = null,
